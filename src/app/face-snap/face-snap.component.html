@@ -2,9 +2,11 @@
 <div class="face-snap-card">
   <h2>🖼️ {{ faceSnap.title }}</h2>
   <p>Mis en ligne le 📅 {{ faceSnap.createdDate }}</p>
-  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
-  <p>{{ faceSnap.description }}</p>
-  <p class="reaction">
+  <img class="flex-snap" [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+  <p class="content">{{ faceSnap.description }}</p>
+  <p class=" content source" *ngIf="faceSnap.location">Photo prise à <strong>{{ faceSnap.location }}.</strong></p>
+
+  <p class="reaction flex-snap">
     <button (click)="onSnap()">{{buttonText}}</button>
     <span class="reactionsText">{{ faceSnap.snaps }} 🧑‍🤝‍🧑réactions.</span>
   </p>
