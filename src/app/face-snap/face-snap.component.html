@@ -1,0 +1,11 @@
+
+<div class="face-snap-card">
+  <h2>🖼️ {{ faceSnap.title }}</h2>
+  <p class="text">Mis en ligne le 📅 {{ faceSnap.createdDate }}</p>
+  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+  <p class="text">{{ faceSnap.description }}</p>
+  <p class="reaction">
+    <button (click)="onSnap()">{{buttonText}}</button>
+    <span class="reactionsText">{{ faceSnap.snaps }} 🧑‍🤝‍🧑réactions.</span>
+  </p>
+</div>

@@ -1,0 +1,58 @@
+div{
+  width: 70%;
+  margin: auto;
+}
+.face-snap-card {
+
+  background-color: #a375e942;
+  border-radius: 78% 22% 61% 39% / 43% 76% 24% 57% ;
+  color: #1c053d;
+
+  img {
+    width: 60%;
+    border-radius: 78% 22% 61% 39% / 43% 76% 24% 57% ;
+    box-shadow:
+    2.7px 1.9px 2.2px rgba(53, 18, 77, 0.16),
+    5.9px 7px 6.2px rgba(53, 18, 77, 0.16),
+    18.1px 17px 12.8px rgba(53, 18, 77, 0.16),
+    25.3px 29.1px 23.2px rgba(53, 18, 77, 0.16),
+    35px 26px 29.4px rgba(53, 18, 77, 0.16),
+    42px 21px 30px rgba(53, 18, 77, 0.16)
+  ;
+  }
+
+  h2{
+    color: #310858c7;
+  }
+
+}
+
+button {
+  border-radius:  43% 76% 24% 57% / 78% 22% 61% 39%  ;
+  background-color: #7b38d8d5;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 1em;
+  padding: 2em;
+  height: 4em;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #7327dd;
+}
+
+
+
+.reactionsText{
+  border-radius:  43% 76% 24% 57% / 78% 22% 61% 39%  ;
+  background-color: #7b38d8d5;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 1em;
+  padding: 2em;
+  height: 4em;
+  margin: 5px;
+}
