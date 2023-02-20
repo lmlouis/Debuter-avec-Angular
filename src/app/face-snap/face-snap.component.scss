@@ -21,6 +21,18 @@ div{
     color: #1c053d;
     font-size: 12px;
   }
+
+  .toggle-text{
+    display: none;
+  }
+
+  a {
+    cursor: pointer;
+  }
+  a:hover{
+    color: #310858c7;
+    text-decoration: underline;
+  }
 }
 .face-snap-card {
 
@@ -108,3 +120,11 @@ button:hover{
   }
 
  }
+
+ p{
+  strong{
+    margin-right: 3px;
+  }
+ }
+
+

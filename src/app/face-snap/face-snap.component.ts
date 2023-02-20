@@ -15,11 +15,27 @@ export class FaceSnapComponent implements OnInit {
 
   isSnaped!:boolean;
   buttonText!: string;
+  knowMore!: boolean;
+  switchMessage!:string;
 
 
   ngOnInit() {
     this.isSnaped = false;
     this.buttonText = "Oh snap!"
+    this.knowMore = true
+    this.switchMessage = "Plus de détals"
+
+  }
+
+  onToggle(){
+    if(this.knowMore){
+      this.knowMore = false
+      this.switchMessage = "Fermer"
+    }else{
+      this.knowMore = true
+      this.switchMessage = "Plus de détals"
+    }
+
   }
 
   addSnap(){
