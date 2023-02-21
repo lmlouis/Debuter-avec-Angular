@@ -1,8 +1,9 @@
-<p>{{0.473 | percent}}</p>
 <div class="face-snap-card">
-  <h2>🖼️ {{ faceSnap.title | titlecase}}</h2>
+  <h2>🖼️{{ faceSnap.title | titlecase}}</h2>
     <p>posté  📅 {{ faceSnap.createdDate | date : 'le dd, MMMM yyyy  à HH:mm'| titlecase}}</p>
-    <img  [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    <a [href]="faceSnap.imageUrl" title="voir le snap {{ faceSnap.title | titlecase}}">
+      <img  [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    </a>
     <p [ngClass]="{'toggle-text':knowMore===true}" class="content">{{ faceSnap.description | lowercase }}</p>
     <p class="source">
       <span *ngIf="faceSnap.location">Photo prise à <strong>{{ faceSnap.location | titlecase }}.</strong></span>
