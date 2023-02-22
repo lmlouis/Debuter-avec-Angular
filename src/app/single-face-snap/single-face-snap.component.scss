@@ -1,0 +1,126 @@
+div{
+  width: 50%;
+  margin: auto;
+
+  .flex-snap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .content{
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    float: left;
+  }
+  .source{
+    font-style: italic;
+    color: #1c053d;
+    font-size: 12px;
+  }
+
+  .toggle-text{
+    display: none;
+  }
+
+  a {
+
+    cursor: pointer;
+  }
+  a:hover{
+    color: #310858c7;
+    text-decoration: underline;
+  }
+}
+.face-snap-card {
+
+  background-color: #a375e942;
+  border-radius: 78% 22% 61% 39% / 43% 76% 24% 57% ;
+  color: #1c053db9;
+  margin-top: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 78% 22% 61% 39% / 43% 76% 24% 57% ;
+    box-shadow:
+    2.7px 1.9px 2.2px rgba(53, 18, 77, 0.041),
+    5.9px 7px 6.2px rgba(53, 18, 77, 0.11),
+    18.1px 17px 12.8px rgba(53, 18, 77, 0.089),
+    25.3px 29.1px 23.2px rgba(53, 18, 77, 0.048),
+    35px 26px 29.4px rgba(53, 18, 77, 0.11),
+    42px 21px 30px rgba(53, 18, 77, 0.068);
+  }
+
+  h2{
+    color: #310858c7;
+  }
+
+}
+
+button {
+  border-radius: 78% 22% 61% 39% / 43% 76% 24% 57%  ;
+  background-color: #7b38d8d5;
+  color: #eeeeee;
+  text-align: center;
+  padding: 1em;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #7327dd;
+}
+
+
+
+.reactionsText{
+  border-radius:  43% 76% 24% 57% / 78% 22% 61% 39%  ;
+  background-color: #7b38d8d5;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 1em;
+  padding: 3em;
+  margin: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  div{
+    width: 90%;
+    margin: auto;
+
+    .content{
+      width: 60%;
+      padding: 0%;
+      float: none;
+      font-size: small;
+    }
+    .source{
+      font-size: 10px;
+    }
+  }
+
+  button {
+    padding: 2em;
+    margin: 2px;
+  }
+
+  .reactionsText{
+    font-size: 0.75em;
+    padding: 2em;
+    margin: 4px;
+  }
+
+ }
+
+ p{
+  strong{
+    margin-right: 3px;
+  }
+ }
+
+

@@ -1,16 +1,6 @@
 <div class="face-snap-card">
   <h2>🖼️{{ faceSnap.title | titlecase}}</h2>
-    <p>posté  📅 {{ faceSnap.createdDate | date : 'le dd, MMMM yyyy  à HH:mm'| titlecase}}</p>
-    <a [href]="faceSnap.imageUrl" title="voir le snap {{ faceSnap.title | titlecase}}">
-      <img  [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    <a (click)="onViewFaceSnap()" title="détails sur {{ faceSnap.title | titlecase}}">
+        <img  [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
     </a>
-    <p [ngClass]="{'toggle-text':knowMore===true}" class="content">{{ faceSnap.description | lowercase }}</p>
-    <p class="source">
-      <span *ngIf="faceSnap.location">lieu :  <strong>{{ faceSnap.location | titlecase }}.</strong></span>
-      <a  (click)="onToggle()">{{switchMessage | uppercase}}</a>
-    </p>
-    <p class="reaction flex-snap">
-      <button (click)="onSnap()">{{buttonText}}</button>
-      <span [ngStyle]="{background:'rgba(122, 55, 215,'+0.005*faceSnap.snaps+0.5+')'}" class="reactionsText">{{ faceSnap.snaps }} 🧑‍🤝‍🧑réactions.</span>
-    </p>
 </div>
