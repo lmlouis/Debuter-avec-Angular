@@ -6,7 +6,7 @@
     </a>
     <p [ngClass]="{'toggle-text':knowMore===true}" class="content">{{ faceSnap.description | lowercase }}</p>
     <p class="source">
-      <span *ngIf="faceSnap.location">source :  <strong>{{ faceSnap.location | titlecase }}.</strong></span>
+      <span *ngIf="faceSnap.location">lieu :  <strong>{{ faceSnap.location | titlecase }}.</strong></span>
       <a  (click)="onToggle()">{{switchMessage | uppercase}}</a>
     </p>
     <p class="reaction flex-snap">
